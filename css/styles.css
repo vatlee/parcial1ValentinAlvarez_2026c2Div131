@@ -1,0 +1,119 @@
+:root {
+    --color-primario: darkslateblue;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+    --color-secundario: #f0eefb;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    margin: 20px 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--gris-oscuro);
+}
+
+.filtros {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.filtros label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.filtros input {
+    accent-color: var(--color-primario);
+}
+.botones {
+    display: flex;
+    gap: 5px;
+}
+
+.botones button {
+    background-color: white;
+    color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.buscador {
+    width: 38%;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-oscuro);
+    box-sizing: border-box;
+}
+
+/* Tabla de usuarios */
+#users-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Celdas de la tabla */
+#users-container th,
+#users-container td {
+    border: 1px solid var(--gris-oscuro);
+    padding: 10px;
+    text-align: left;
+}
+
+/* Filas impares */
+#users-container tbody tr:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+
+/* Color del username */
+.username {
+    color: var(--color-primario);
+}
+
+/* Imagen del usuario */
+#users-container img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+/* Efecto al pasar el mouse */
+#users-container tbody tr:hover {
+    background-color: var(--color-secundario);
+}
